@@ -1,92 +1,64 @@
-# todotask
-```markdown
-UserAuthHub
 
-UserAuthHub is a modern, full-stack authentication web application built using React, Express.js, TypeScript, and PostgreSQL. It allows users to securely register, log in, and manage sessions. The app is designed with clean UI/UX, real-time features, and scalability in mind, ideal for hackathons and production use.
+# TODO List Web Application
 
-Features
+This is a full-stack TODO list web app built as part of a hackathon challenge. The app allows users to:
+- Sign up / log in (Google, GitHub authentication)
+- Create, read, update, and delete tasks
+- Filter and manage tasks with an intuitive UI
 
-- Secure user authentication with Passport.js (Local Strategy)
-- Responsive UI using Tailwind CSS and Radix UI
-- Real-time-ready architecture (WebSocket integrated)
-- Form validation with Zod and React Hook Form
-- Dashboard-ready structure with support for charts and analytics
-- PostgreSQL support via Drizzle ORM
-- Fast dev experience using Vite and Esbuild
+---
 
-Tech Stack
+## 🚀 Tech Stack
+- **Frontend:** React + Vite + Tailwind CSS
+- **Backend:** Node.js + Express + TypeScript
+- **Database:** PostgreSQL using Drizzle ORM
+- **Deployment:** Vercel for frontend + Railway/Render for backend
 
-Frontend: React, Tailwind CSS, Radix UI  
-Backend: Express.js, TypeScript  
-Auth: Passport.js (Local)  
-Realtime: WebSocket (ws)  
-DB Layer: PostgreSQL, Drizzle ORM  
-Build Tool: Vite, Esbuild  
+---
 
-Installation and Setup
+## ⚡ How to set up locally
 
-1. Clone the repository:
+### 1️⃣ Clone the repo
+```bash
+git clone https://github.com/YourUsername/todo-app.git
+cd todo-app
+````
 
-git clone https://github.com/<your-username>/UserAuthHub.git  
-cd UserAuthHub
+### 2️⃣ Install dependencies
 
-2. Install dependencies:
-
+```bash
 npm install
+```
 
-3. Set up .env file:
+### 3️⃣ Run in development mode
 
-DATABASE_URL=postgres://user:password@localhost:5432/userauthhub  
-SESSION_SECRET=your_session_secret
-
-4. Push DB schema:
-
-npx drizzle-kit push
-
-5. Run the app:
-
+```bash
 npm run dev
+```
 
-Project Structure
 
-UserAuthHub/  
-server/  
-components/  
-pages/  
-drizzle.config.ts  
-tailwind.config.ts  
-tsconfig.json  
-vite.config.ts
+## 💡 Assumptions
 
-Deployment
+* PostgreSQL is used as the database.
+* Deployment is done using Vercel (frontend) and Railway/Render (backend).
+* Authentication uses Passport.js with Google and GitHub OAuth strategies.
 
-This project is publicly deployed and can be accessed at:  
-https://userauthhub-demo.vercel.app
+---
 
-Demo Video
+## 🙌 Acknowledgment
 
-Watch the complete walkthrough of the project here:  
-https://www.loom.com/share/example-video-link
+This project is a part of a hackathon run by [https://www.katomaran.com](https://www.katomaran.com)
 
-Assumptions Made
+---
 
-- PostgreSQL and Drizzle ORM are used as no specific DB was restricted
-- Deployment assumed on Vercel (frontend) and Render/Fly.io (backend)
-- Local authentication used without email verification due to time constraints
-- Email service integration can be added later
+## ✨ Notes
 
-Architecture Diagram
+* The codebase follows modular, scalable design.
+* UI is styled using Tailwind CSS with attention to responsiveness and accessibility.
+* Prompts and AI tool usage (ChatGPT, Replit, etc.) have been documented and will be presented during the interview.
 
-docs/architecture-diagram.png
+---
 
-Scripts
 
-npm run dev - Starts the development server  
-npm run build - Builds the project for production  
-npm run start - Runs the app in production  
-npx drizzle-kit push - Push DB migrations
 
-Final Note
-
-This project is a part of a hackathon run by https://www.katomaran.com
 
