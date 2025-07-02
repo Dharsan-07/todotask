@@ -1,0 +1,7 @@
+Implement database storage for persistent data and user information
+
+Adds Drizzle ORM with Neon Postgres for persistent storage, including user seeding.
+
+Replit-Commit-Author: Agent
+Replit-Commit-Session-Id: 8a6fb886-faa7-452c-abd4-39759301b1ab
+Replit-Commit-Screenshot-Url: https://storage.googleapis.com/screenshot-production-us-central1/3af3fd19-fb61-4be5-a3e3-ea4191909d04/c1a2050e-f4ef-433f-9dc4-bac84b950085.jpg
